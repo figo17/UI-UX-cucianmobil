@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LuxeWash - Premium Car Wash & Detailing Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#0EA5E9",
+              secondary: "#64748B",
+            },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      .nav-fixed { background: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+      .service-card:hover { transform: translateY(-5px); }
+      .testimonial-slider { scroll-behavior: smooth; }
+    </style>
+  </head>
+  <body class="min-h-screen bg-white">
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300">
+      <div class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+          <a href="#" class="text-3xl font-['Pacifico'] text-primary">logo</a>
+          <div class="hidden md:flex items-center space-x-8">
+            <a href="#services" class="text-gray-700 hover:text-primary"
+              >Services</a
+            >
+            <a href="#pricing" class="text-gray-700 hover:text-primary"
+              >Pricing</a
+            >
+            <a href="#about" class="text-gray-700 hover:text-primary">About</a>
+            <a href="#contact" class="text-gray-700 hover:text-primary"
+              >Contact</a
+            >
+            <button
+              class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap cursor-pointer"
+            >
+              Book Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header
+      class="relative min-h-screen flex items-center"
+      style="background-image: url('https://public.readdy.ai/ai/img_res/fb6dfc8d9c9353edc3be84b1381892c6.jpg'); background-size: cover; background-position: center;"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent"
+      ></div>
+      <div class="container mx-auto px-6 relative z-10">
+        <div class="max-w-2xl text-white">
+          <h1 class="text-5xl font-bold mb-6">
+            Premium Car Wash & Detailing Services
+          </h1>
+          <p class="text-xl mb-8">
+            Experience the ultimate in automotive care with our professional
+            detailing services. We treat every vehicle with the attention it
+            deserves.
+          </p>
+          <button
+            class="bg-primary text-white px-8 py-4 !rounded-button text-lg hover:bg-primary/90 transition-colors whitespace-nowrap cursor-pointer"
+          >
+            Book Appointment
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section id="services" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-16">
+          Our Premium Services
+        </h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="service-card bg-white p-8 rounded-lg shadow-lg transition-all duration-300"
+          >
+            <div
+              class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mb-6"
+            >
+              <i class="ri-car-wash-line text-primary ri-2x"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Exterior Detailing</h3>
+            <p class="text-gray-600 mb-4">
+              Complete exterior cleaning, waxing, and protection for a showroom
+              shine.
+            </p>
+            <p class="text-primary font-semibold">From $89.99</p>
+          </div>
+          <div
+            class="service-card bg-white p-8 rounded-lg shadow-lg transition-all duration-300"
+          >
+            <div
+              class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mb-6"
+            >
+              <i class="ri-steering-2-line text-primary ri-2x"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Interior Detailing</h3>
+            <p class="text-gray-600 mb-4">
+              Deep cleaning of all interior surfaces, including leather
+              conditioning.
+            </p>
+            <p class="text-primary font-semibold">From $99.99</p>
+          </div>
+          <div
+            class="service-card bg-white p-8 rounded-lg shadow-lg transition-all duration-300"
+          >
+            <div
+              class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mb-6"
+            >
+              <i class="ri-shield-star-line text-primary ri-2x"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Ceramic Coating</h3>
+            <p class="text-gray-600 mb-4">
+              Long-lasting protection with advanced ceramic coating technology.
+            </p>
+            <p class="text-primary font-semibold">From $499.99</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-16">Why Choose Us</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div
+              class="w-16 h-16 mx-auto flex items-center justify-center bg-primary/10 rounded-full mb-6"
+            >
+              <i class="ri-timer-line text-primary ri-2x"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Fast Service</h3>
+            <p class="text-gray-600">
+              Quick turnaround without compromising on quality.
+            </p>
+          </div>
+          <div class="text-center">
+            <div
+              class="w-16 h-16 mx-auto flex items-center justify-center bg-primary/10 rounded-full mb-6"
+            >
+              <i class="ri-medal-line text-primary ri-2x"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Expert Team</h3>
+            <p class="text-gray-600">
+              Certified professionals with years of experience.
+            </p>
+          </div>
+          <div class="text-center">
+            <div
+              class="w-16 h-16 mx-auto flex items-center justify-center bg-primary/10 rounded-full mb-6"
+            >
+              <i class="ri-thumb-up-line text-primary ri-2x"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Satisfaction Guaranteed</h3>
+            <p class="text-gray-600">
+              100% satisfaction guarantee on all services.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-16">Pricing Packages</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-bold mb-4">Basic</h3>
+            <p class="text-4xl font-bold text-primary mb-6">$89.99</p>
+            <ul class="space-y-4 mb-8">
+              <li class="flex items-center">
+                <i class="ri-checkbox-circle-line text-primary mr-2"></i
+                >Exterior Wash
+              </li>
+              <li class="flex items-center">
+                <i class="ri-checkbox-circle-line text-primary mr-2"></i>Tire
+                Cleaning
+              </li>
+              <li class="flex items-center">
+                <i class="ri-checkbox-circle-line text-primary mr-2"></i>Window
+                Cleaning
+              </li>
+            </ul>
+            <button
+              class="w-full bg-gray-200 text-gray-800 px-6 py-3 !rounded-button hover:bg-gray-300 transition-colors whitespace-nowrap cursor-pointer"
+            >
+              Select Package
+            </button>
+          </div>
+          <div
+            class="bg-white p-8 rounded-lg shadow-lg transform scale-105 border-2 border-primary"
+          >
+            <h3 class="text-2xl font-bold mb-4">Premium</h3>
+            <p class="text-4xl font-bold text-primary mb-6">$149.99</p>
+            <ul class="space-y-4 mb-8">
+              <li class="flex items-center">
+                <i class="ri-checkbox-circle-line text-primary mr-2"></i>All
+                Basic Features
+              </li>
+              <li class="flex items-center">
+                <i class="ri-checkbox-circle-line text-primary mr-2"></i
+                >Interior Detailing
+              </li>
+              <li class="flex items-center">
+                <i class="ri-checkbox-circle-line text-primary mr-2"></i>Wax
+                Protection
+              </li>
+              <li class="flex items-center">
+                <i class="ri-checkbox-circle-line text-primary mr-2"></i>Leather
+                Treatment
+              </li>
+            </ul>
+            <button
+              class="w-full bg-primary text-white px-6 py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap cursor-pointer"
+            >
+              Select Package
+            </button>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-bold mb-4">Ultimate</h3>
+            <p class="text-4xl font-bold text-primary mb-6">$249.99</p>
+            <ul class="space-y-4 mb-8">
+              <li class="flex items-center">
+                <i class="ri-checkbox-circle-line text-primary mr-2"></i>All
+                Premium Features
+              </li>
+              <li class="flex items-center">
+                <i class="ri-checkbox-circle-line text-primary mr-2"></i>Ceramic
+                Coating
+              </li>
+              <li class="flex items-center">
+                <i class="ri-checkbox-circle-line text-primary mr-2"></i>Paint
+                Correction
+              </li>
+              <li class="flex items-center">
+                <i class="ri-checkbox-circle-line text-primary mr-2"></i>Engine
+                Bay Cleaning
+              </li>
+            </ul>
+            <button
+              class="w-full bg-gray-200 text-gray-800 px-6 py-3 !rounded-button hover:bg-gray-300 transition-colors whitespace-nowrap cursor-pointer"
+            >
+              Select Package
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-16">
+          What Our Customers Say
+        </h2>
+        <div class="relative">
+          <div
+            class="testimonial-slider flex overflow-x-auto snap-x snap-mandatory hidden-scrollbar"
+          >
+            <div class="min-w-full snap-center px-4">
+              <div class="bg-gray-50 p-8 rounded-lg">
+                <div class="flex items-center mb-4">
+                  <div class="text-primary">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                  </div>
+                </div>
+                <p class="text-gray-600 mb-4">
+                  "Exceptional service! My car looks better than when I first
+                  bought it. The attention to detail is impressive."
+                </p>
+                <p class="font-bold">Michael Anderson</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12">
+          <div>
+            <h2 class="text-4xl font-bold mb-8">Get in Touch</h2>
+            <form class="space-y-6">
+              <div>
+                <label class="block text-gray-700 mb-2">Name</label>
+                <input
+                  type="text"
+                  class="w-full px-4 py-2 rounded-lg border-gray-300 focus:border-primary focus:ring-primary"
+                  required
+                />
+              </div>
+              <div>
+                <label class="block text-gray-700 mb-2">Email</label>
+                <input
+                  type="email"
+                  class="w-full px-4 py-2 rounded-lg border-gray-300 focus:border-primary focus:ring-primary"
+                  required
+                />
+              </div>
+              <div>
+                <label class="block text-gray-700 mb-2">Message</label>
+                <textarea
+                  class="w-full px-4 py-2 rounded-lg border-gray-300 focus:border-primary focus:ring-primary"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="bg-primary text-white px-6 py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap cursor-pointer"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+          <div>
+            <h2 class="text-4xl font-bold mb-8">Visit Us</h2>
+            <div class="space-y-4 mb-8">
+              <p class="flex items-center">
+                <i class="ri-map-pin-line mr-2"></i>
+                123 Washing Street, New York, NY 10001
+              </p>
+              <p class="flex items-center">
+                <i class="ri-phone-line mr-2"></i>
+                (555) 123-4567
+              </p>
+              <p class="flex items-center">
+                <i class="ri-time-line mr-2"></i>
+                Mon-Sat: 8:00 AM - 7:00 PM
+              </p>
+            </div>
+            <div class="h-64 rounded-lg overflow-hidden">
+              <img
+                src="https://public.readdy.ai/gen_page/map_placeholder_1280x720.png"
+                alt="Location"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-2xl font-['Pacifico'] mb-4">logo</h3>
+            <p class="text-gray-400">
+              Premium car wash and detailing services for your luxury vehicle.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#services" class="text-gray-400 hover:text-white"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a href="#pricing" class="text-gray-400 hover:text-white"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a href="#about" class="text-gray-400 hover:text-white"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="text-gray-400 hover:text-white"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-4">Connect With Us</h4>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-white">
+                <i class="ri-facebook-fill ri-lg"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white">
+                <i class="ri-twitter-fill ri-lg"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white">
+                <i class="ri-instagram-fill ri-lg"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-4">Newsletter</h4>
+            <form class="flex">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="px-4 py-2 rounded-l-lg w-full"
+              />
+              <button
+                type="submit"
+                class="bg-primary px-4 py-2 rounded-r-lg hover:bg-primary/90"
+              >
+                <i class="ri-send-plane-fill"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400"
+        >
+          <p>&copy; 2025 LuxeWash. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const navbar = document.getElementById("navbar");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          navbar.classList.add("nav-fixed");
+        } else {
+          navbar.classList.remove("nav-fixed");
+        }
+      });
+
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
